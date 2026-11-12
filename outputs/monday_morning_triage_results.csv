@@ -1,0 +1,21 @@
+Patient_ID,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,KNN_Risk_Prob,LogReg_Risk_Prob,Risk_Percentage,Triage_Rank,Clinical_Action
+P-112,10,168,74,0,0,38.0,0.537,34,0.6667,0.901,90.1%,1,🚨 PRIORITY LAB BLOOD TEST
+P-105,0,137,40,35,168,43.1,2.288,33,0.3333,0.8886,88.9%,2,🚨 PRIORITY LAB BLOOD TEST
+P-103,8,183,64,0,0,23.3,0.672,32,0.7778,0.7927,79.3%,3,🚨 PRIORITY LAB BLOOD TEST
+P-109,2,197,70,45,543,30.5,0.158,53,0.7778,0.7646,76.5%,4,🚨 PRIORITY LAB BLOOD TEST
+P-113,10,139,80,0,0,27.1,1.441,57,0.6667,0.7593,75.9%,5,🚨 PRIORITY LAB BLOOD TEST
+P-101,6,148,72,35,0,33.6,0.627,50,0.6667,0.7094,70.9%,6,🚨 PRIORITY LAB BLOOD TEST
+P-114,1,189,60,23,846,30.1,0.398,59,0.7778,0.6631,66.3%,7,Routine Lifestyle Advice (Home)
+P-115,5,166,72,19,175,25.8,0.587,51,0.5556,0.6408,64.1%,8,Routine Lifestyle Advice (Home)
+P-117,0,118,84,47,230,45.8,0.551,31,0.5556,0.4205,42.0%,9,Routine Lifestyle Advice (Home)
+P-110,8,125,96,0,0,0.0,0.232,54,0.3333,0.4096,41.0%,10,Routine Lifestyle Advice (Home)
+P-108,10,115,0,0,0,35.3,0.134,29,0.4444,0.3979,39.8%,11,Routine Lifestyle Advice (Home)
+P-119,1,103,30,38,83,43.3,0.183,33,0.4444,0.3362,33.6%,12,Routine Lifestyle Advice (Home)
+P-120,1,115,70,30,96,34.6,0.529,32,0.2222,0.2404,24.0%,13,Routine Lifestyle Advice (Home)
+P-111,4,110,92,0,0,37.6,0.191,30,0.1111,0.2245,22.4%,14,Routine Lifestyle Advice (Home)
+P-116,7,100,0,0,0,30.0,0.484,32,0.4444,0.1839,18.4%,15,Routine Lifestyle Advice (Home)
+P-118,7,107,74,0,0,29.6,0.254,31,0.5556,0.183,18.3%,16,Routine Lifestyle Advice (Home)
+P-106,5,116,74,0,0,25.6,0.201,30,0.1111,0.1376,13.8%,17,Routine Lifestyle Advice (Home)
+P-107,3,78,50,32,88,31.0,0.248,26,0.1111,0.0603,6.0%,18,Routine Lifestyle Advice (Home)
+P-104,1,89,66,23,94,28.1,0.167,21,0.0,0.0403,4.0%,19,Routine Lifestyle Advice (Home)
+P-102,1,85,66,29,0,26.6,0.351,31,0.0,0.0401,4.0%,20,Routine Lifestyle Advice (Home)

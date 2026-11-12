@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Temporary & extracted reference files
+reference_website/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

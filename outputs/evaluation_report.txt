@@ -1,0 +1,32 @@
+================================================================================
+RURAL HEALTH CLINIC - DIABETES RISK PREDICTION EVALUATION REPORT
+================================================================================
+
+Dataset Size: 768 records (500 Healthy, 268 Diabetic)
+Train/Test Partition: 80% Train (614), 20% Holdout Test (154)
+Missing Value Treatment: Zeros in Glucose, BP, Skin, Insulin, BMI replaced with NaN
+Imputation: Median imputation fitted strictly on Train split (Zero Leakage)
+
+1. DEFAULT THRESHOLD PERFORMANCE (T = 0.50)
+--------------------------------------------------------------------------------
+              Model  Accuracy  Precision  Recall  F1_Score  ROC_AUC  CV_AUC_5Fold
+                KNN    0.7403     0.6346  0.6111    0.6226   0.7969        0.8170
+Logistic Regression    0.7078     0.6000  0.5000    0.5455   0.8130        0.8434
+      Decision Tree    0.7922     0.6964  0.7222    0.7091   0.8006        0.7784
+
+2. 30% CLINIC CAPACITY CONSTRAINT EVALUATION
+--------------------------------------------------------------------------------
+Testing Capacity: 30% of daily arrivals (47 tests permitted out of 154)
+Diabetics in Test Cohort: 54
+
+              Model  Kits_Used  Diabetics_Caught_TP  Diabetics_Missed_FN  Kits_Wasted_FP  Healthy_Sent_Home_TN  Recall_at_30pct  Precision_at_30pct  Cutoff_Threshold
+                KNN         47                   31                   23              16                    84           0.5741              0.6596            0.5361
+Logistic Regression         47                   27                   27              20                    80           0.5000              0.5745            0.4993
+      Decision Tree         47                   30                   24              17                    83           0.5556              0.6383            0.5573
+
+3. CLINICAL RECOMMENDATION
+--------------------------------------------------------------------------------
+Recommended Winning Model: KNN
+Justification: Captures 57.4% of real diabetic patients (31/54) while utilizing only 47 test kits.
+Cutoff Threshold: Patients with risk score >= 0.536 are immediately queued for phlebotomy.
+Remaining patients receive non-invasive dietary/exercise guidance and 6-month checkup.

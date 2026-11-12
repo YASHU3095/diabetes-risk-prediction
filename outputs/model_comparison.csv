@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1_Score,ROC_AUC,CV_AUC_5Fold,Kits_Used,Diabetics_Caught_TP,Diabetics_Missed_FN,Kits_Wasted_FP,Healthy_Sent_Home_TN,Recall_at_30pct,Precision_at_30pct,Cutoff_Threshold
+KNN,0.7403,0.6346,0.6111,0.6226,0.7969,0.817,47,31,23,16,84,0.5741,0.6596,0.5361
+Logistic Regression,0.7078,0.6,0.5,0.5455,0.813,0.8434,47,27,27,20,80,0.5,0.5745,0.4993
+Decision Tree,0.7922,0.6964,0.7222,0.7091,0.8006,0.7784,47,30,24,17,83,0.5556,0.6383,0.5573
